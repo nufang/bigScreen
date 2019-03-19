@@ -21,7 +21,8 @@ $(document).ready(function () {
     (function init() {
         $.ajax({
             method: 'get',
-            url: 'js/data.json',
+            //url: 'js/data.json',
+            url: 'http://202.201.156.92:8080/screen/enrollinfo/detail',
             success: function (data) {
                 var year = [], index = 0;
                 data.enrollDetails.forEach(function (n,i) {
